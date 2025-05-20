@@ -1,5 +1,6 @@
 .header-header {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
+  text-align: start;
 }
 .header-header > h1 {
   color: hsl(213, 96%, 18%);
