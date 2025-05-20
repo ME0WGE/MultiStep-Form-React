@@ -1,5 +1,4 @@
 import "./card.css";
-// import data from "../../data/data.json";
 
 export default function Card({
   planTitle,
@@ -8,10 +7,14 @@ export default function Card({
   imgSrc,
   altText,
 }) {
+  const imageSource = new URL(`../../assets/img/${imgSrc}`, import.meta.url)
+    .href;
+
   return (
     <>
+      {/* Display Plans */}
       <div className="card">
-        <img src={imgSrc} alt={altText} />
+        <img src={imageSource} alt={altText} />
         <div className="card-content">
           <h3> {planTitle} </h3>
           <span>

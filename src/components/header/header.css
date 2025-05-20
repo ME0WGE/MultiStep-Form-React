@@ -1,0 +1,15 @@
+.header-header {
+    margin-bottom: 50px;
+}
+.header-header > h1 {
+  color: hsl(213, 96%, 18%);
+
+  font-size: 3rem;
+
+  margin: 0.25rem;
+}
+.header-header > span {
+  color: hsl(231, 11%, 63%);
+
+  font-size: 1.25rem;
+}
