@@ -6,5 +6,21 @@
       "yearly": 90
     },
     "image": "arcade.svg"
+  },
+  {
+    "title": "Advanced",
+    "price": {
+      "monthly": 12,
+      "yearly": 120
+    },
+    "image": "advanced.svg"
+  },
+  {
+    "title": "Pro",
+    "price": {
+      "monthly": 15,
+      "yearly": 150
+    },
+    "image": "pro.svg"
   }
 ]
