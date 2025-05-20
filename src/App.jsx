@@ -3,8 +3,11 @@ import "./App.css";
 function App() {
   return (
     <>
-      {/* Ready to code! */}
-      {/* Script written by github.com/ME0WGE */}
+      {/* STEP 1 - Your Info*/}
+      {/* STEP 2 - Select Plan*/}
+      {/* STEP 3 - Add-Ons*/}
+      {/* STEP 4 - Summary*/}
+      {/* STEP 5 - Final Step*/}
     </>
   );
 }
