@@ -46,13 +46,14 @@
 .billing-switch {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 
-  gap: 1.2rem;
-  background: hsl(217, 100%, 97%);
-  border-radius: 8px;
   padding: 0.7rem 0;
   margin-top: 1.5rem;
+
+  background: hsl(217, 100%, 97%);
+
+  border-radius: 8px;
 }
 
 .billing-switch span {
@@ -64,7 +65,7 @@
 }
 
 .billing-switch span.active {
-  color: hsl(243, 100%, 62%);
+  color: hsl(213, 96%, 18%);
 }
 
 .switch {
@@ -89,7 +90,7 @@
   right: 0;
   bottom: 0;
 
-  background-color: hsl(243, 100%, 62%);
+  background-color: hsl(213, 96%, 18%);
   border-radius: 22px;
 
   cursor: pointer;
@@ -138,7 +139,7 @@
 }
 
 .go-back:hover {
-  color: hsl(243, 100%, 62%);
+  color: hsl(213, 96%, 18%);
 }
 
 .next-step {

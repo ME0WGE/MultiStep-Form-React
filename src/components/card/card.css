@@ -16,6 +16,10 @@
 
   width: 210px;
 }
+.card:hover {
+  cursor: pointer;
+  border: 3px solid rgb(87, 1, 167);
+}
 
 .card > img {
   width: 65px;
@@ -25,5 +29,8 @@
 .card-content h3 {
   margin: 0;
 
-  color: hsl(243, 100%, 62%);
+  color: hsl(213, 96%, 26%);
+}
+.card-content > span {
+  color: hsl(231, 11%, 63%);
 }
