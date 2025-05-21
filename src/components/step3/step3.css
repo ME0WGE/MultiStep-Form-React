@@ -1,0 +1,117 @@
+.step3 {
+  display: flex;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+  width: 60%;
+}
+.menu-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  width: 33% !important;
+
+  margin-left: 1rem;
+}
+.step3-container {
+  width: 80% !important;
+  padding: 4rem;
+}
+
+.addon-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.addon-option {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.addon-option:hover {
+  border-color: purple;
+}
+
+.addon-option.selected {
+  border-color: purple;
+  background-color: hsl(217, 100%, 97%, 0.3);
+}
+
+.addon-option input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 24px;
+  accent-color: purple;
+  cursor: pointer;
+}
+
+.addon-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.addon-content h3 {
+  color: hsl(213, 96%, 18%);
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+
+.addon-content p {
+  color: hsl(231, 11%, 63%);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.addon-price {
+  color: purple;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.step3-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
+}
+
+.go-back {
+  background: transparent;
+  border: none;
+  color: hsl(231, 11%, 63%);
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  transition: color 0.2s ease;
+}
+
+.go-back:hover {
+  color: hsl(213, 96%, 18%);
+}
+
+.next-step {
+  background: hsl(213, 96%, 18%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.next-step:hover {
+  background: hsl(213, 96%, 25%);
+}

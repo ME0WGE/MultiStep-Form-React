@@ -5,12 +5,20 @@ import data from "../../data/data.json";
 import Sidebar from "../sidebar/Sidebar";
 import { useState } from "react";
 
-export default function Step2() {
+export default function Step2({ onNext, onPrev }) {
   const headerH1 = "Select Your Plan";
   const headerSpan = "You have the option of monthly or yearly billing";
 
   const [billing, setBilling] = useState("monthly");
   const [selectedIndex, setSelectedIndex] = useState(null);
+
+  const handleNext = () => {
+    if (selectedIndex !== null) {
+      onNext();
+    } else {
+      alert("Please select a plan before proceeding");
+    }
+  };
 
   return (
     <div className="step2">
@@ -55,8 +63,8 @@ export default function Step2() {
         </div>
 
         <div className="step2-buttons">
-          <button className="go-back">Go Back</button>
-          <button className="next-step">Next Step</button>
+          <button className="go-back" onClick={onPrev}>Go Back</button>
+          <button className="next-step" onClick={handleNext}>Next Step</button>
         </div>
       </div>
     </div>
