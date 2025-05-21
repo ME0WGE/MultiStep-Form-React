@@ -10,6 +10,7 @@ export default function Step2() {
   const headerSpan = "You have the option of monthly or yearly billing";
 
   const [billing, setBilling] = useState("monthly");
+  const [selectedIndex, setSelectedIndex] = useState(null);
 
   return (
     <div className="step2">
@@ -30,6 +31,10 @@ export default function Step2() {
               paymentFrequency={billing === "monthly" ? "mo" : "yr"}
               imgSrc={plan.image}
               altText={`image of the ${plan.title} plan`}
+              isSelected={selectedIndex === index}
+              onSelect={() =>
+                setSelectedIndex(selectedIndex === index ? null : index)
+              }
             />
           ))}
         </div>
