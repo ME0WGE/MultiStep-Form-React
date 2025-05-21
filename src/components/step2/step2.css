@@ -1,10 +1,160 @@
 .plan-cards {
   display: flex;
-
-  gap: 1rem;
+  gap: 1.5rem;
+  justify-content: flex-start;
 }
+
 .step2 {
   display: flex;
+  justify-content: center;
+  align-items: center;
 
-  gap: 10rem;
+  gap: 3rem;
+
+  background: hsl(0, 0%, 100%);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+
+  border-radius: 15px;
+
+  padding-left: 1rem;
+  padding-right: 5rem;
+}
+
+.menu-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  width: 33%;
+}
+
+.step2-container {
+  display: flex;
+  flex-direction: column;
+
+  background: hsl(0, 0%, 100%);
+
+  padding: 3.5rem 0rem 2rem 2rem;
+
+  min-width: 350px;
+  max-width: auto;
+  width: 100%;
+
+  gap: 2.5rem;
+}
+
+.billing-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.2rem;
+  background: hsl(217, 100%, 97%);
+  border-radius: 8px;
+  padding: 0.7rem 0;
+  margin-top: 1.5rem;
+}
+
+.billing-switch span {
+  color: hsl(231, 11%, 63%);
+  font-weight: 700;
+  font-size: 1rem;
+
+  transition: color 0.2s;
+}
+
+.billing-switch span.active {
+  color: hsl(243, 100%, 62%);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+
+  width: 44px;
+  height: 22px;
+}
+
+.switch input {
+  opacity: 0;
+
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: hsl(243, 100%, 62%);
+  border-radius: 22px;
+
+  cursor: pointer;
+
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 3px;
+
+  background-color: white;
+  border-radius: 50%;
+
+  transition: 0.4s;
+}
+
+.switch input:checked + .slider {
+  background-color: hsl(213, 96%, 18%);
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+.step2-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 2rem;
+}
+
+.go-back {
+  background: none;
+  border: none;
+  color: hsl(231, 11%, 63%);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.go-back:hover {
+  color: hsl(243, 100%, 62%);
+}
+
+.next-step {
+  background: hsl(213, 96%, 18%);
+  color: #fff;
+
+  border: none;
+  border-radius: 8px;
+
+  padding: 0.8rem 2.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.next-step:hover {
+  background: hsl(213, 96%, 26%);
 }
