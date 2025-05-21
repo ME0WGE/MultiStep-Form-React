@@ -18,7 +18,7 @@ export default function Card({
       <div className="card-content">
         <h3>{planTitle}</h3>
         <span>
-          ${planPrice} / {paymentFrequency}
+          ${planPrice}/{paymentFrequency}
         </span>
       </div>
     </div>
