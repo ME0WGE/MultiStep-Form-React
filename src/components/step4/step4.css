@@ -1,0 +1,150 @@
+.step4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background: hsl(0, 0%, 100%);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  border-radius: 15px;
+  padding-left: 1rem;
+  padding-right: 5rem;
+}
+
+.menu-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  margin: 0;
+
+  width: 100% !important;
+}
+
+.step4-container {
+  display: flex;
+  flex-direction: column;
+  background: hsl(0, 0%, 100%);
+  padding: 3.5rem 0rem 2rem 2rem;
+  min-width: 350px;
+  max-width: auto;
+  width: 100%;
+  gap: 2.5rem;
+
+  padding: 0;
+}
+
+.summary {
+  background: hsl(217, 100%, 97%);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.plan-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid hsl(229, 24%, 87%);
+  margin-bottom: 1.5rem;
+}
+
+.plan-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.plan-details h3 {
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+  margin: 0;
+}
+
+.change-btn {
+  background: none;
+  border: none;
+  color: hsl(231, 11%, 63%);
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.change-btn:hover {
+  color: hsl(243, 100%, 62%);
+}
+
+.plan-price {
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem 0.5rem;
+}
+
+.total-label {
+  color: hsl(231, 11%, 63%);
+}
+
+.total-price {
+  color: hsl(243, 100%, 62%);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.step4-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6rem;
+}
+
+.go-back {
+  background: none;
+  border: none;
+  color: hsl(231, 11%, 63%);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.go-back:hover {
+  color: hsl(213, 96%, 18%);
+}
+
+.confirm {
+  background: hsl(243, 100%, 62%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 2.2rem;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.confirm:hover {
+  background: hsl(243, 100%, 72%);
+}
+
+.addon-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.addon-name {
+  color: hsl(231, 11%, 63%);
+  font-size: 0.9rem;
+}
+
+.addon-price {
+  color: hsl(213, 96%, 18%);
+  font-size: 0.9rem;
+}
