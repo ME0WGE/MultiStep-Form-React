@@ -1,0 +1,96 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  position: relative;
+
+  width: 350px;
+  min-width: 220px;
+
+  border-radius: 15px;
+
+  padding: 2rem 1.5rem 20rem;
+
+  overflow: hidden;
+}
+
+.sidebar-bg {
+  position: absolute;
+
+  inset: 0;
+  z-index: 0;
+
+  background: url("../../assets/img/sidebar.svg") no-repeat bottom left/cover;
+
+  pointer-events: none;
+}
+
+.sidebar-steps {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  z-index: 1;
+
+  gap: 2rem;
+}
+
+.sidebar-step {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.sidebar-step-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  border: 2px solid hsl(228, 100%, 84%);
+  border-radius: 50%;
+
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  background: transparent;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.sidebar-step-circle.active {
+  background: hsl(206, 94%, 87%);
+
+  color: hsl(243, 100%, 62%);
+
+  box-shadow: 1px 1px 5px 0px black;
+
+  border: 2px solid hsl(206, 94%, 87%);
+}
+
+.sidebar-step-labels {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sidebar-step-number {
+  color: hsl(228, 100%, 84%);
+
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.sidebar-step-title {
+  color: hsl(0, 0%, 100%);
+
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}

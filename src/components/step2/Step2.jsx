@@ -2,7 +2,7 @@ import Card from "../card/Card";
 import Header from "../header/Header";
 import "./step2.css";
 import data from "../../data/data.json";
-import Menu from "../menu/Menu";
+import Sidebar from "../sidebar/Sidebar";
 
 export default function Step2() {
   const headerH1 = "Select Your Plan";
@@ -13,7 +13,7 @@ export default function Step2() {
       <div className="step2">
         <div className="menu-container">
           {/* Menu */}
-          <Menu />
+          <Sidebar activeStep={2} />
         </div>
         {/* Content */}
         <div className="step2-container">
