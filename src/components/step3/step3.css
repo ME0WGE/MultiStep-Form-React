@@ -18,6 +18,10 @@
 .step3-container {
   width: 80% !important;
   padding: 4rem;
+
+  min-width: 775px;
+  max-width: auto;
+  width: 100%;
 }
 
 .addon-options {
