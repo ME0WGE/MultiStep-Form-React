@@ -149,3 +149,208 @@
   color: hsl(213, 96%, 18%);
   font-size: 0.9rem;
 }
+
+/* Tablette (768px - 1023px) */
+@media screen and (max-width: 1023px) {
+  .step4 {
+    width: 90%;
+    margin: 0 auto;
+    gap: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+  }
+
+  .step4-container {
+    min-width: 375px;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .summary {
+    padding: 1.2rem;
+  }
+
+  .plan-summary {
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .plan-details h3 {
+    font-size: 0.95rem;
+  }
+
+  .change-btn {
+    font-size: 0.85rem;
+  }
+
+  .total {
+    padding: 1.2rem 0.8rem 0.4rem;
+  }
+
+  .total-label {
+    font-size: 0.9rem;
+  }
+
+  .total-price {
+    font-size: 1.1rem;
+  }
+
+  .addon-item {
+    padding: 0.4rem 0.8rem;
+  }
+
+  .addon-name,
+  .addon-price {
+    font-size: 0.85rem;
+  }
+
+  .step4-buttons {
+    margin-top: 4rem;
+  }
+
+  .confirm,
+  .go-back {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile (767px-) */
+@media screen and (max-width: 767px) {
+  .step4 {
+    flex-direction: column;
+    width: 95%;
+    margin: 20px auto;
+    padding: 0;
+    border-radius: 10px;
+  }
+
+  .menu-container {
+    width: 100% !important;
+    padding: 0;
+    margin: 0;
+  }
+
+  .step4-container {
+    min-width: unset;
+    width: 100%;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .summary {
+    padding: 1rem;
+  }
+
+  .plan-summary {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .plan-details h3 {
+    font-size: 0.9rem;
+  }
+
+  .change-btn {
+    font-size: 0.8rem;
+  }
+
+  .plan-price {
+    font-size: 0.9rem;
+  }
+
+  .total {
+    padding: 1rem 0.6rem 0.3rem;
+  }
+
+  .total-label {
+    font-size: 0.85rem;
+  }
+
+  .total-price {
+    font-size: 1rem;
+  }
+
+  .addon-item {
+    padding: 0.3rem 0.6rem;
+  }
+
+  .addon-name,
+  .addon-price {
+    font-size: 0.8rem;
+  }
+
+  .step4-buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 15px;
+    margin: 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+
+  .confirm,
+  .go-back {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.5rem;
+  }
+
+  .step4-container {
+    padding-bottom: 80px;
+  }
+}
+
+/* Petits mobiles (375px-) */
+@media screen and (max-width: 375px) {
+  .step4 {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .step4-container {
+    padding: 1.2rem;
+  }
+
+  .summary {
+    padding: 0.8rem;
+  }
+
+  .plan-details h3 {
+    font-size: 0.85rem;
+  }
+
+  .change-btn {
+    font-size: 0.75rem;
+  }
+
+  .plan-price {
+    font-size: 0.85rem;
+  }
+
+  .total-label {
+    font-size: 0.8rem;
+  }
+
+  .total-price {
+    font-size: 0.95rem;
+  }
+
+  .addon-name,
+  .addon-price {
+    font-size: 0.75rem;
+  }
+
+  .step4-buttons {
+    padding: 12px;
+  }
+
+  .confirm,
+  .go-back {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+}
