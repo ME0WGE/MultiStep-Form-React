@@ -22,7 +22,7 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
 
-  width: 50% !important;
+  /* width: 50% !important; */
 }
 
 .step1-container {
@@ -33,7 +33,7 @@
 
   padding: 3.5rem 0rem 2rem 2rem;
 
-  min-width: 350px;
+  min-width: 600px;
   max-width: auto;
   width: 100%;
 
