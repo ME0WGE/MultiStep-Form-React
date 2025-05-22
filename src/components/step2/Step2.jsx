@@ -16,13 +16,15 @@ export default function Step2({
   const headerSpan = "You have the option of monthly or yearly billing";
 
   const [selectedIndex, setSelectedIndex] = useState(null);
+  const [error, setError] = useState(false);
 
   const handleNext = () => {
     if (selectedIndex !== null) {
+      setError(false);
       setSelectedPlan(selectedIndex);
       onNext();
     } else {
-      alert("Please select a plan before proceeding");
+      setError(true);
     }
   };
 
@@ -46,12 +48,19 @@ export default function Step2({
               imgSrc={plan.image}
               altText={`image of the ${plan.title} plan`}
               isSelected={selectedIndex === index}
-              onSelect={() =>
-                setSelectedIndex(selectedIndex === index ? null : index)
-              }
+              onSelect={() => {
+                setSelectedIndex(selectedIndex === index ? null : index);
+                setError(false);
+              }}
             />
           ))}
         </div>
+
+        {error && (
+          <div className="error-message">
+            Please select a plan before proceeding
+          </div>
+        )}
 
         <div className="billing-switch">
           <span className={billing === "monthly" ? "active" : ""}>Monthly</span>

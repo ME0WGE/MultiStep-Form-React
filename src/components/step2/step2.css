@@ -157,6 +157,29 @@
   background: hsl(213, 96%, 26%);
 }
 
+.error-message {
+  color: hsl(354, 84%, 57%);
+  font-size: 0.9rem;
+  margin-top: 0.8rem;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: hsla(354, 84%, 97%, 0.5);
+  border-left: 3px solid hsl(354, 84%, 57%);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Tablette (768px - 1023px) */
 @media screen and (max-width: 1023px) {
   .step2 {
@@ -264,6 +287,11 @@
   .go-back {
     font-size: 0.9rem;
     padding: 0.7rem 1.5rem;
+  }
+
+  .error-message {
+    font-size: 0.85rem;
+    margin-top: 0.6rem;
   }
 }
 
