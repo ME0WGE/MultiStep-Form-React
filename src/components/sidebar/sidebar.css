@@ -92,3 +92,88 @@
   font-size: 1rem;
   letter-spacing: 1px;
 }
+
+/* Tablette (768px - 1023px) */
+@media screen and (max-width: 1023px) {
+  .sidebar {
+    width: 280px;
+    min-width: 200px;
+    padding: 1.5rem 1rem 18rem;
+  }
+
+  .sidebar-step-circle {
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+  }
+
+  .sidebar-steps {
+    gap: 1.5rem;
+  }
+
+  .sidebar-step-title {
+    font-size: 0.9rem;
+  }
+
+  .sidebar-step-number {
+    font-size: 0.7rem;
+  }
+}
+
+/* Mobile (767px-) */
+@media screen and (max-width: 767px) {
+  .sidebar {
+    width: 100%;
+    min-width: unset;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2rem 0;
+    border-radius: 0;
+  }
+
+  .sidebar-bg {
+    background-position: center;
+    background-size: cover;
+    border-radius: 0;
+  }
+
+  .sidebar-steps {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .sidebar-step {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .sidebar-step-labels {
+    display: none;
+  }
+
+  .sidebar-step-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+}
+
+/* Petits mobiles (375px-) */
+@media screen and (max-width: 375px) {
+  .sidebar {
+    padding: 1.5rem 0;
+  }
+
+  .sidebar-steps {
+    gap: 0.8rem;
+  }
+
+  .sidebar-step-circle {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}
