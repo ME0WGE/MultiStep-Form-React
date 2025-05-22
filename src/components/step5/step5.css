@@ -1,29 +1,3 @@
-.menu-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-
-  width: 33%;
-}
-
-.success {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.success > h2 {
-  font-size: 2.5rem;
-  color: hsl(213, 96%, 18%);
-}
-.success > p {
-  font-size: 1rem;
-  color: hsl(231, 11%, 63%);
-}
-.success > img {
-  margin-bottom: 2rem;
-}
 .step5 {
   display: flex;
   justify-content: center;
@@ -39,5 +13,36 @@
   padding-left: 1rem;
   padding-right: 5rem;
 
-  width: 55%;
+  width: 60%;
+}
+
+.menu-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  /* width: 100%; */
+}
+
+.success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  min-width: 650px;
+  max-width: auto;
+  width: 100%;
+}
+.success > h2 {
+  font-size: 2.5rem;
+  color: hsl(213, 96%, 18%);
+}
+.success > p {
+  font-size: 1rem;
+  color: hsl(231, 11%, 63%);
+}
+.success > img {
+  margin-bottom: 2rem;
 }

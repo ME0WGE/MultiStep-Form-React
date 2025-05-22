@@ -24,13 +24,14 @@
   display: flex;
   flex-direction: column;
   background: hsl(0, 0%, 100%);
+
   padding: 3.5rem 0rem 2rem 2rem;
-  min-width: 350px;
+
+  min-width: 650px;
   max-width: auto;
   width: 100%;
-  gap: 2.5rem;
 
-  padding: 0;
+  gap: 2.5rem;
 }
 
 .summary {
